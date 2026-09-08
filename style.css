@@ -1,0 +1,273 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-gradient: linear-gradient(120deg, #c3c2c4, #7dc2d3, #d1cdcd);
+    --text-color: #000000;
+    --card-bg: rgba(59, 53, 53, 0.12);
+    --nav-bg: #b8e8f7;
+    --accent: #21282b;
+}
+
+
+body.light {
+    --bg-gradient: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+    --text-color: #020101;
+    --card-bg: #ffffff;
+    --nav-bg: #eaeaea;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
+nav a,
+nav button {
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+nav a:hover,
+nav button:hover {
+    background: rgba(211, 64, 64, 0.1);
+    color: var(--accent);
+}
+
+
+header {
+    margin-left: 220px;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+section.card {
+    margin: 2rem auto;
+    margin-left: calc(220px + (100% - 220px - 900px) / 2);
+    padding: 2rem;
+    max-width: 900px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    animation: fadeIn 1s ease-in;
+}
+
+
+section.card h2 {
+    margin-bottom: 1rem;
+}
+
+section.card h3 {
+    margin-top: 1.5rem;
+}
+
+section.card p,
+section.card ul {
+    margin-bottom: 0.8rem;
+}
+
+
+aside {
+    margin-top: 1.5rem;
+}
+
+
+ul {
+    margin-left: 1.5rem;
+}
+
+
+footer {
+    margin-left: 220px;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+input,
+textarea,
+button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header,
+    section.card,
+    footer {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    nav a,
+    nav button {
+        text-align: center;
+    }
+}
+
+h1 {
+    color: #000000;  
+}
+
+
+h2 {
+    color: #000000; 
+}
+
+h3 {
+    color: #000000; 
+}
+.skills-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .skills-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000000; 
+  }
+  
+  .skill-group {
+    margin-bottom: 30px;
+  }
+  
+  .skill-group h3 {
+    margin-bottom: 15px;
+    color: #042c0d;
+  }
+  
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  
+  .skill-tag {
+    padding: 10px 16px;
+    background: #141a1a;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #086d26;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+  
+  
+  .skill-tag:hover {
+    background: #046d15;
+    color: #dd0505;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255, 106, 0, 0.4);
+  }
+  .skill-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+ 
+  .skill-tag i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .skill-tag:hover i {
+    transform: scale(1.2);
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .vignettes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.vignette {
+    width: 220px;
+    height: 150px;
+    background-color: #0f6d70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.vignette:hover {
+    transform: scale(1.05);
+    background-color: #dcdcdc;
+}
+.image-stage {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+}
+.card p,
+.card li {
+    text-align: justify;
+}
