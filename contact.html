@@ -23,16 +23,34 @@
 </nav>
 
 <section class="card">
-    <form action="mailto:kentinperrat@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="nom" placeholder="Nom" required>
-        
-        <input type="email" name="email" placeholder="Email" required>
-        
-        <textarea name="message" placeholder="Message" required></textarea>
-        
+
+    <form name="contact" method="POST" data-netlify="true">
+    
+        <input 
+            type="text" 
+            name="nom" 
+            placeholder="Nom" 
+            required
+        >
+    
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Email" 
+            required
+        >
+    
+        <textarea 
+            name="message" 
+            placeholder="Message" 
+            required
+        ></textarea>
+    
         <button type="submit">Envoyer</button>
+    
     </form>
-</section>
+    
+    </section>
 
 <footer>
     <p>© 2025 - Kentin Perrat</p>
